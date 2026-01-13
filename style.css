@@ -89,7 +89,10 @@
     border-radius: 10px;
     cursor: pointer;
 
-}
+} 
+.button-home:hover{
+    background: #3b8d3e;
+} 
 .home-img img{
     width:90%
 }
@@ -97,13 +100,13 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 20vh;
-    margin-bottom: 10vh;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
 }
 
 .cards{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
     gap: 30px;
     align-items: center;
     text-align: center;
@@ -115,6 +118,9 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
+}
+.card-foods p{
+    max-width: 600px;
 }
 .card-foods button{
     padding: 10px;
@@ -146,30 +152,5 @@
 
 @media(max-width:780px){
 
-    .header nav ul{
-        display: none;
-    }
-    .home-text{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin: auto;
-        padding: 25%;
-    }
-    .home-img img{
-        display: none;
-    }
-    .container-text{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 25%;
-    }
-    .cards{
-        grid-template-columns: 1fr;
-        margin: 20px;
-        padding: 0;
-    }
+
 }
