@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+}
+
+
+.header{
+    position: fixed;
+    background: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 10%;
+    z-index: 100;
+    top: 0;
+    right: 0;
+}
+
+.title{
+    color:#4CAF50 ;
+    cursor: pointer;
+}
+.title span{
+    color: black;
+}
+
+.list-inicio{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.list-inicio li a{
+    color: black;
+    font-weight: 500;
+}
+.list-inicio li a:hover{
+    color: #4CAF50;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.icon{
+    background: #4CAF50;
+    font-size:20px;
+    width: 30px;
+    text-align: center;
+    height: 30px;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.home{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 18px 10%;
+    gap: 2rem;
+    margin-top: 20vh;
+}
+
+
+.home h1{
+    font-size: 3rem;
+}
+
+.home h3{
+    font-size:2rem ;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.button-home{
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    color: white;
+    background: #4CAF50;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.home-img img{
+    width:90%
+}
+.container-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+    padding: 18px 10%;
+}
+
+.card-foods{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.card-foods button{
+    padding: 10px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 30px;
+    
+}
+
+.card-foods button:hover{
+    background: #3b8d3e;
+}
+
+.card-foods p{
+    color: rgba(0, 0, 0, 0.774);
+}
+.card-foods h3, p , button{
+    margin: 8px;
+}
+
+.imgs-card{
+    width: 400px;
+}
+
+
+@media(max-width:780px){
+
+    .header nav ul{
+        display: none;
+    }
+    .home-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        padding: 25%;
+    }
+    .home-img img{
+        display: none;
+    }
+    .container-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 25%;
+    }
+    .cards{
+        grid-template-columns: 1fr;
+        margin: 20px;
+        padding: 0;
+    }
+}
