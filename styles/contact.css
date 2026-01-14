@@ -80,6 +80,6 @@
 
     .img-apre img{
         width: 250px;
-        display: block;
+        display: none;
     }
 }
