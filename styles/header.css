@@ -1,0 +1,98 @@
+.header {
+  position: fixed;
+  background: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 10%;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  flex-wrap: wrap;
+  border: 1px solid rgba(0, 0, 0, 0.055);
+}
+
+.title {
+  color: #4caf50;
+  cursor: pointer;
+}
+.title span {
+  color: black;
+}
+
+.list-inicio {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.list-inicio li a {
+  color: black;
+  font-weight: 500;
+}
+.list-inicio li a:hover {
+  color: white;
+  background: #4caf50;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.icon {
+  background: #4caf50;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  height: 30px;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.button {
+  display: none;
+}
+@media (max-width: 700px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 8 5%;
+    gap: 50px;
+    
+  }
+
+  .list-inicio {
+    display: none;
+  }
+  .button {
+    display: flex;
+    background: #222;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    align-items: center;
+    position: relative;
+    z-index: 600;
+  }
+  .button::before {
+    margin-right: 5px;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 12px;
+    background: white;
+    box-shadow: 0 4px white, 0 -4px white;
+  }
+  .list-inicio.active {
+    display: block;
+  }
+  .list-inicio.active li {
+    margin: 10px;
+  }
+}
