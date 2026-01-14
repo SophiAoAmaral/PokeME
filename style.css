@@ -43,7 +43,10 @@
     font-weight: 500;
 }
 .list-inicio li a:hover{
-    color: #4CAF50;
+    color: white;
+    background: #4CAF50;
+    padding: 10px;
+    border-radius: 10px;
     font-weight: 500;
     transition: 0.3s;
 }
@@ -92,6 +95,7 @@
 } 
 .button-home:hover{
     background: #3b8d3e;
+    transition: 0.3s;
 } 
 .home-img img{
     width:90%
@@ -136,6 +140,7 @@
 
 .card-foods button:hover{
     background: #3b8d3e;
+    transition: 0.3s;
 }
 
 .card-foods p{
@@ -149,6 +154,37 @@
     width: 400px;
 }
 
+
+.container-chefs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 15vh;
+    justify-content: center;
+    padding: 18px 10%;
+}
+
+.img-chefs img{
+    width: 100%;
+    object-fit: contain;
+    height: 50%;
+    border-radius: 50%;
+}
+.text-chefs{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    
+    
+}
+
+.text-chefs h1{
+    font-size: 7rem;
+}
+.text-chefs span{
+    color: #4CAF50;
+
+}
 
 @media(max-width:780px){
 
