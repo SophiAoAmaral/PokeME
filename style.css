@@ -61,6 +61,58 @@
     border-radius: 50%;
     cursor: pointer;
 }
+.button{
+    display: none;
+}
+@media(max-width:700px){
+.header{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+
+}
+.icon{
+    display: none;
+}
+.list-inicio{
+        display: none;
+    
+    }
+ .button{
+  display: flex;
+  background: #222;
+  border: none;
+  padding: .5rem 1rem ;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+  align-items: center;
+  position: relative;
+  z-index: 600;
+}
+.button::before{ 
+  margin-right: 5px;
+  content: '';
+  display: inline-block;
+  height: 2px;
+  width: 12px;
+  background: white;
+  box-shadow: 0 4px white, 0 -4px white;
+}
+.list-inicio.active{
+    display: block;
+
+}
+.list-inicio.active li{
+    margin: 10px;
+}
+}
+
+
 .home{
     width: 100%;
     display: grid;
@@ -122,6 +174,7 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
+
 }
 .card-foods p{
     max-width: 600px;
@@ -180,13 +233,10 @@
 
 .text-chefs h1{
     font-size: 7rem;
+    margin: 15px;
 }
 .text-chefs span{
     color: #4CAF50;
 
 }
 
-@media(max-width:780px){
-
-
-}
