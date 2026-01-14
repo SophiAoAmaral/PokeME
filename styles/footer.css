@@ -1,41 +1,17 @@
 footer{
     background-color: black ;
-    display: flex;
-    justify-content: space-between;
     color: white;
-    padding: 18px 10%;
-    margin-top: 10vh;
-    
-}
-footer .title span{
-    color: white;
-}
-
-footer .contato  p:hover {
-    color: #4caf50;
-}
-footer .local  p:hover {
-    color: #4caf50;
-}
-.copy{
-    color: white;
-    display: inline-block;
-    background-color: black;
-    width: 100%;
     text-align: center;
-    margin-bottom: 0;
+    padding: 10px ;
+    margin-top: 10vh;
+}
+ footer .title > span{
+    color: white;
 }
 
-@media(max-width:560px){
+@media(max-width:500px){
     footer{
-        padding: 8px 5%;
-    }
-    .contato{
         font-size: 10px;
-        margin: 10px;
-    }
-    .local{
-        font-size: 10px;
-        margin: 10px;
     }
 }
+
